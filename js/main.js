@@ -1,7 +1,7 @@
 //Convertidor de peso Colombiano a euro, dolar, peso mexicanos, 
 //peso argentino, peso chileno, soles.
 
-
+//Tasas de cambio 
 const TASA_CAMBIO_DOLAR = 0.00026
 const TASA_CAMBIO_EURO = 0.00024
 const TASA_CAMBIO_MEXICANO = 0.0043
