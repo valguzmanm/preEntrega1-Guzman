@@ -57,6 +57,8 @@ if (resultado === null ) {
 
 otrosCambios = confirm("¿Desea hacer otra conversión?");
 
-if(otrosCambios === false)
+if(otrosCambios === false){
     alert("¡Gracias por usar nuestros servicios, nos vemos pronto!")
 }
+}
+
