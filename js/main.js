@@ -11,6 +11,8 @@ const TASA_CAMBIO_CHILENO = 0.24
 const TASA_CAMBIO_PERUANO = 0.00095
 
 
+//Aquí verificamos el cambio de moneda
+
 function convertir(valor, moneda){
 
     moneda = moneda.toUpperCase()
@@ -40,12 +42,14 @@ function convertir(valor, moneda){
 
 }
 
+//Variable que activo y desactivo para que el ciclo funcione
+
 
 let otrosCambios = true;
 
 while (otrosCambios) {
 
-    let pesoColombiano;
+    let pesoColombiano = parseFloat(prompt("Ingrese el valor que desea convertir"));
 
     do {
         pesoColombiano = parseFloat(prompt("Ingrese el valor que desea convertir"))
@@ -55,6 +59,7 @@ while (otrosCambios) {
     } while (isNaN(pesoColombiano));
 
 
+// Indicar cuál es la moneda a la que se hará el cambio
 
     let monedaObjetivo = prompt("Selecciona la moneda a la que deseas hacer el cambio:\nUSD - Dolar americado\nEUR - Euro\nMXN - Peso Mexicano\nARS - Peso Argentino\nCLP - Peso chileno\nSOL - Sol peruano")
 
